@@ -1,0 +1,87 @@
+.c-item {
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    color: white;
+    padding: 0;    /* Remove padding */
+    margin: 0;     /* Remove margin */
+  }
+  
+  .c-img {
+    height: 100%;
+    width: 100%;   /* Ensure image covers full width */
+    object-fit: cover;
+    filter: brightness(1);
+  }
+  
+  .carousel-caption p,
+.carousel-caption h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /*padding-top: 40%;*/
+  font-size: 7vh;
+  color: rgb(255, 255, 255); /* Ensure the text color is set to white */
+}
+
+
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 6vh; /* Adjust as needed */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .book-now-button {
+    background-color: #007AFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 105px;
+    font-size: 3.5vh;
+    padding: 3% 6%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  .book-now-button:hover {
+    background-color: white;
+  }
+  
+  #content {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: calc(24px + 2vmin); /* Adjust the font size as needed */
+    color: #282c34;
+  }
+  
+  p {
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #61dafb;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+        width: 45%; /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Full width for small screens */
+    }
+}

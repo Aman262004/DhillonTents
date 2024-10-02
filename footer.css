@@ -1,0 +1,71 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px; /* Further reduced padding */
+    background-color: rgb(255, 255, 255);
+    /* Safari specific fix for flexbox issues */
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+
+.footer .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the menu items */
+    margin: 5px 0; /* Further reduced margin */
+    /* Safari specific fix for flexbox issues */
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+
+.footer .menu .foot-logo img {
+    width: 25vw; /* Adjusted width */
+    max-width: 150px; /* Further reduced max-width */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 5px; /* Reduced space below the logo */
+}
+
+.footer .menu li {
+    display: inline-block;
+    margin: 0.5em; /* Reduced margin */
+}
+
+.footer .menu li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); /* Adjust the color as needed */
+    font-size: 0.875rem; /* Adjusted font size */
+}
+
+.footer p {
+    color: black;
+    margin: 5px 0; /* Reduced margin */
+}
+
+/* Safari Specific Fix */
+@media not all and (min-resolution: 0.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        .footer .container, .footer .menu {
+            display: -webkit-box; 
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -webkit-align-items: center;
+            -webkit-justify-content: center;
+        }
+    }
+}

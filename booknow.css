@@ -1,0 +1,16 @@
+#content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.select-date {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.select-date h3 {
+    font-size: 2vh;
+    color: #00254d;
+}

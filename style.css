@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 2% 5%;
+    box-shadow: 0 2px 4px rgba(176, 176, 176, 0.1);
+    justify-content: space-between;
+  }
+  
+  .navbar img {
+    height: calc(4vh + 2vw); /* Adjust the height to better match the second navbar */
+    max-height: 100px;
+    width: auto; /* Keep the width proportional */
+  }
+  
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(1.5vh + .5vw); /* Adjust the font size as needed */
+    max-height: 100px;
+    margin: 0 0px; /* Add some spacing between the links */
+  }
+
+
+  
+  .navbar a:hover {
+    color: #787777;
+  }
+

@@ -1,0 +1,86 @@
+.our-services {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.our-services h1 {
+    font-size: 6vh;
+    color: #71942F;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between;
+    gap: 20px; /* Add gap between cards */
+    padding: 40px 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px); /* Three columns layout */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 4vh;
+    margin-bottom: 10px;
+    color: #71942F;
+}
+
+.card p {
+    font-size: 2vh;
+    color: #555;
+    flex-grow: 1;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 2px;
+    color: #71942F;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.gallery {
+    text-align: center;
+    margin: 40px; /* Adjust as needed */
+}
+
+.gallery h1 {
+    font-size: 6vh;
+    color: #71942F;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(45% - 20px); /* Two columns layout */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* One column layout */
+    }
+}
